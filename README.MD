@@ -12,23 +12,23 @@
    3. Запустите проект из команды `python3 bot.py`
 
 
-### Як робити та реєструвати хендлери:
-Створюєте модуль `you_name.py` у папці `handlers`.
+### Как делать и регистрировать хендлеры:
+Создаете модуль `you_name.py` в папке `handlers`.
 
-Створюєте роутер у `you_name.py`.
+Создаете роутер в `you_name.py`.
 ```python
 from aiogram import Router
 user_router = Router()
 ```
-Можна робити декілька роутерів в одному модулі, та на кожний з них навішувати хендлери.
-Можна реєструвати хендлери декораторами:
+Можно делать несколько роутеров в одном модуле и на каждый из них навешивать хендлеры.
+Можно регистрировать хендлеры декораторами:
 ```python
 @user_router.message(commands=["start"])
 async def user_start(message):
     await message.reply("Вітаю, звичайний користувач!")
 ```
 
-Заходимо у файл `bot.py` і додаємо всі роутери в нього:
+Заходим в файл `bot.py` и добавляем все роутеры в него:
 ```python
 from tgbot.handlers.admin import admin_router
 from tgbot.handlers.echo import echo_router
@@ -50,5 +50,5 @@ async def main():
         dp.include_router(router)
 ```
 
-### Туторіали з aiogram v3
-Відосів поки що немає, але @Groosha вже почав робити [свій підручник](https://groosha.2038.io/telegram-tutorial-2/).
+### Туториалы с v3
+Видосов пока нет, но @Groosha уже начал делать [свой учебник](https://groosha.2038.io/telegram-tutorial-2/).
