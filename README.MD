@@ -1,15 +1,15 @@
-Цей темплейт використовується для розробки Telegram ботів з використанням бібліотеки [`aiogram v3.0+`](https://github.com/aiogram/aiogram/tree/dev-3.x).
+Этот темплейт используется для разработки Telegram ботів с использованием библиотеки [`aiogram v3.0+`](https://github.com/aiogram/aiogram/tree/dev-3.x).
 
-### Для того, щоб почати використовувати:
-1. Скопіюйте `.env.dist` в `.env` і заповніть необхідні дані.
-2. Створіть нові хендлери.
+### Для того, чтобы начать использовать:
+1. Скопируйте `.env.dist` в `.env` и заполните необходимые данные.
+2. Создайте новые хендлеры.
 3. **Docker:**
-   1. Можете одразу запускати проєкт із Docker, а якщо в вас його немає, то [завантажте, та встановіть](https://docs.docker.com/get-docker/).
-   2. Запустіть проєкт з команди `docker-compose up`
+   1. Вы можете сразу запустить проект с Docker, а если у вас его нет, то [загрузите и установите](https://docs.docker.com/get-docker/).
+   2. Запустите проект из команды `docker-compose up`
 4. **Без Docker:**
-   1. Створіть [venv](https://docs.python.org/3/library/venv.html)
-   2. Встановить залежності із requirements.txt: `pip install -r requirements.txt`
-   3. Запустіть проєкт з команди `python3 bot.py`
+   1. Создайте [venv](https://docs.python.org/3/library/venv.html)
+   2. Установите зависимости из requirements.txt: `pip install -r requirements.txt`
+   3. Запустите проект из команды `python3 bot.py`
 
 
 ### Як робити та реєструвати хендлери:
