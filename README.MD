@@ -25,7 +25,7 @@ user_router = Router()
 ```python
 @user_router.message(commands=["start"])
 async def user_start(message):
-    await message.reply("Вітаю, звичайний користувач!")
+    await message.reply("Приветствую тебя, обычный пользователь!")
 ```
 
 Заходим в файл `bot.py` и добавляем все роутеры в него:
